@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.awar{
+			width: 300px;
+			height: 300px;
+			margin: 200px auto;
+			position: relative;
+		}
+		
+		.out{
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			transform-style: preserve-3d;
+			transform: rotateX(-30deg) rotateY(-80deg);
+			animation: qwe linear 15s infinite;
+		}
+		@-webkit-keyframes qwe{
+			from{
+				transform:rotateX(0deg) rotateY(0deg)
+			}
+			to{
+				transform:rotateX(360deg) rotateY(360deg)
+			}
+		}
+		.out div{
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			opacity: 0.8;
+			transition: .5s;
+		}
+		.out .pg{
+			width: 300px;
+			height: 300px;
+		}
+		.out .out-left{
+			transform: rotateY(0deg) translateZ(150px);
+		}
+		.out .out-top{
+			transform: translateZ(-150px) rotateY(180deg) ;
+		}
+		.out .out-right{
+			transform: rotateY(-90deg) translateZ(150px);
+		}
+		.out .out-bottom{
+			transform: rotateY(90deg) translateZ(150px) ;
+		}
+		.out .out-front{
+			transform:rotateX(90deg) translateZ(150px) ;
+		}
+		
+		.out .out-balk{
+			transform: rotateX(-90deg) translateZ(150px);
+		}
+		.out:hover .out-left{
+			transform: rotateY(0deg) translateZ(250px);
+		}
+		.out:hover .out-top{
+			transform: translateZ(-250px) rotateY(180deg);
+		}
+		.out:hover .out-right{
+			transform: rotateY(90deg) translateZ(200px);
+		}
+		.out:hover .out-bottom{
+			transform: rotateY(-90deg) translateZ(200px);
+		}
+		.out:hover .out-front{
+			transform: rotateX(90deg) translateZ(200px);
+		}
+		.out:hover .out-balk{
+			transform: rotateX(-90deg) translateZ(200px);
+		}
+	</style>
+	<body>
+		<div class="awar">
+			<div class="out">
+				<div class="out-left">
+					<img src="img/q.jpg" alt="" class="pg">
+				</div>
+				<div class="out-top">
+					<img src="img/e.jpg" alt=""class="pg">
+				</div>
+				<div class="out-right">
+					<img src="img/r.jpg" alt=""class="pg">
+				</div>
+				<div class="out-bottom">
+					<img src="img/t.jpg" alt=""class="pg">
+				</div>
+				<div class="out-front">
+					<img src="img/w.jpg" alt=""class="pg">
+				</div>
+				<div class="out-balk">
+					<img src="img/y.jpg" alt=""class="pg">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
